@@ -9,10 +9,6 @@ const Navbar = () => {
     <NavLink to="/career">Career</NavLink>,
   ];
 
-  const activeStyle = {
-    fontWeight: "bold",
-    color: "#FF0000",
-  };
   return (
     <>
       <nav className="py-4 text-accent flex justify-between items-center border-t border-b m-3">
