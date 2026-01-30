@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="py-4 text-accent flex justify-between items-center border-t border-b m-3">
+      <nav className="sticky top-0 py-4 text-accent flex justify-between items-center border-t border-b m-3">
         <div className=""></div>
         <div className="flex gap-6 mr-6 text-lg font-semibold">
           {navlinks.map((link, idx) => (

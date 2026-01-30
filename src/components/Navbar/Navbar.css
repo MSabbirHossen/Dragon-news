@@ -1,7 +1,5 @@
 a.active{
-    /* text-decoration: underline; */
     font-weight: bold;
-    font-size: larger;
     color: black;
     background-color: var(--color-base-300);
     padding: 0.2rem 0.5rem;
