@@ -1,31 +1,17 @@
 import React from "react";
-import { Outlet } from "react-router";
+import NewsSection from "../../layouts/NewsSection";
 import Header from "../Header/Header";
-import LeftAside from "../LeftAside/LeftAside";
-import RightAside from "../RightAside/RightAside";
-import NewsArea from "../NewsArea/NewsArea";
-import { Suspense } from "react";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
     <div className="text-center mt-20">
-      <header>
-        <Header />
-      </header>
-      <main className="grid grid-cols-12 gap-1 my-4">
-        <aside className="col-span-3">
-          <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-            <LeftAside />
-          </Suspense>
-        </aside>
-        <section className="news-content col-span-6">
-          <NewsArea />
-          <Outlet />
-        </section>
-        <aside className="col-span-3">
-          <RightAside />
-        </aside>
-      </main>
+      <h1 className="text-4xl font-bold">Welcome to Dragon News Home Page</h1>
+      <p className="mt-4 text-lg"> 
+        This is the home page of the Dragon News application. Use the navigation
+        menu to explore different news categories and stay updated with the latest
+        news articles.
+      </p>
     </div>
   );
 };
